@@ -16,10 +16,12 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
+                //Logo
                 Container(
                     child: Image.asset(
                         "assets/images/urjc_full_logo_transparent.png"),
                     padding: EdgeInsets.only(top: 150, left: 30, right: 30)),
+                // Form: user y pwd
                 Container(
                   padding: EdgeInsets.only(left: 30, right: 30, top: 50),
                   color: Colors.transparent,
@@ -32,9 +34,37 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: InputDecoration(labelText: "Contraseña"),
                       )
                     ],
-                    //children: <Widget>[TextField()],
                   ),
-                )
+                ),
+                // Login button
+                Container(
+                  padding: EdgeInsets.all(30),
+                  width: MediaQuery.of(context).size.width,
+                  child:
+                      FlatButton(
+                        color: Colors.red,
+                        textColor: Colors.white,
+                        disabledColor: Colors.grey,
+                        disabledTextColor: Colors.black,
+                        padding: EdgeInsets.all(20.0),
+                        splashColor: Colors.red[300],
+                        onPressed: () {
+                          /*...*/
+                        },
+                        child: Text(
+                          "Login",
+                          style: TextStyle(fontSize: 16.0),
+                        ),
+                        shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                                color: Colors.transparent,
+                                width: 1,
+                                style: BorderStyle.solid),
+                            borderRadius: BorderRadius.circular(50)),
+                      )
+                    
+                  ),
+                
               ],
             )));
   }
