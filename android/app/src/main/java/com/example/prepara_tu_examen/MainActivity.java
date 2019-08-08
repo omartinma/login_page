@@ -1,4 +1,4 @@
-package com.example.prepara_tu_examen;
+package com.example.login_page;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
