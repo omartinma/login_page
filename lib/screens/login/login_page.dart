@@ -23,8 +23,7 @@ class _LoginPageState extends State<LoginPage> {
                     padding: EdgeInsets.only(top: 150, left: 30, right: 30)),
                 // Form: user y pwd
                 Container(
-                  padding: EdgeInsets.only(left: 30, right: 30, top: 50),
-                  color: Colors.transparent,
+                  margin: EdgeInsets.only(left: 40,right: 40, top: 30, bottom: 20),
                   child: new Column(              
                     children: <Widget>[                  
                       TextField(
