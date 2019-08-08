@@ -25,46 +25,45 @@ class _LoginPageState extends State<LoginPage> {
                 Container(
                   padding: EdgeInsets.only(left: 30, right: 30, top: 50),
                   color: Colors.transparent,
-                  child: new Column(
-                    children: <Widget>[
+                  child: new Column(              
+                    children: <Widget>[                  
                       TextField(
-                          decoration: InputDecoration(labelText: "Usuario")),
+                          decoration: InputDecoration(
+                              labelText: "Usuario",
+                              icon: Icon(Icons.account_circle))),
                       TextField(
                         obscureText: true,
-                        decoration: InputDecoration(labelText: "Contraseña"),
+                        decoration: InputDecoration(
+                            labelText: "Contraseña", icon: Icon(Icons.lock)),
                       )
                     ],
                   ),
                 ),
                 // Login button
                 Container(
-                  padding: EdgeInsets.all(30),
-                  width: MediaQuery.of(context).size.width,
-                  child:
-                      FlatButton(
-                        color: Colors.red,
-                        textColor: Colors.white,
-                        disabledColor: Colors.grey,
-                        disabledTextColor: Colors.black,
-                        padding: EdgeInsets.all(20.0),
-                        splashColor: Colors.red[300],
-                        onPressed: () {
-                          /*...*/
-                        },
-                        child: Text(
-                          "Login",
-                          style: TextStyle(fontSize: 16.0),
-                        ),
-                        shape: RoundedRectangleBorder(
-                            side: BorderSide(
-                                color: Colors.transparent,
-                                width: 1,
-                                style: BorderStyle.solid),
-                            borderRadius: BorderRadius.circular(50)),
-                      )
-                    
-                  ),
-                
+                    padding: EdgeInsets.all(30),
+                    width: MediaQuery.of(context).size.width,
+                    child: FlatButton(
+                      color: Colors.red,
+                      textColor: Colors.white,
+                      disabledColor: Colors.grey,
+                      disabledTextColor: Colors.black,
+                      padding: EdgeInsets.all(20.0),
+                      splashColor: Colors.red[300],
+                      onPressed: () {
+                        /*...*/
+                      },
+                      child: Text(
+                        "Login",
+                        style: TextStyle(fontSize: 16.0),
+                      ),
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                              color: Colors.transparent,
+                              width: 1,
+                              style: BorderStyle.solid),
+                          borderRadius: BorderRadius.circular(50)),
+                    )),
               ],
             )));
   }
