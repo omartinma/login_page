@@ -21,13 +21,17 @@ class _LoginPageState extends State<LoginPage> {
                         "assets/images/urjc_full_logo_transparent.png"),
                     padding: EdgeInsets.only(top: 150, left: 30, right: 30)),
                 Container(
-                  padding: EdgeInsets.only(left: 30,right: 30,top: 50),
+                  padding: EdgeInsets.only(left: 30, right: 30, top: 50),
                   color: Colors.transparent,
                   child: new Column(
                     children: <Widget>[
-                      TextField(),
-                      TextField(obscureText: true,)
-                      ],
+                      TextField(
+                          decoration: InputDecoration(labelText: "Usuario")),
+                      TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(labelText: "Contraseña"),
+                      )
+                    ],
                     //children: <Widget>[TextField()],
                   ),
                 )
